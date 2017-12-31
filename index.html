@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KAMZEI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="./images/htPink.png" type="image/x-icon">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+        <style>
+
+            html, body {
+                overflow: hidden;
+                background-color: : #000;
+              }
+
+              body {
+                font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+                color: #555;
+                margin: 0;
+                padding: 0;
+            }
+
+            #container {
+              height: 100vh;
+              width: 100vw;
+              background: url('./images/kamzei.jpg') no-repeat;
+              background-position: -90% 10%;
+              background-color: #000;
+              transition: background 0.5s linear;
+              -webkit-transition: background 1.5s linear;
+            }
+
+            #wrapper {
+                position: absolute;
+                left: 0;
+                width: 320px;
+                text-align: center;
+                top: 55%;
+                left: 50%;
+                margin-left: -160px;
+                margin-top: -160px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            h1 {
+                font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                letter-spacing: 9px;
+                text-transform: uppercase;
+                margin: 12px 0;
+                left: 4px;
+            }
+
+            h2 {
+                color: #999999;
+                font-weight: normal;
+                font-size: 15px;
+                letter-spacing: .12em;
+                margin-bottom: 30px;
+                left: 3px;
+            }
+
+            h1, h2 {
+                position: relative;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 2em;
+                margin: 0;
+                letter-spacing: 2px;
+            }
+
+            .slash, a {
+                color: #999;
+                text-decoration: none;
+                transition: color .2s ease;
+            }
+
+            a:hover {
+                color: #EA65B9;
+                /* blue - #42d7f4 */
+            }
+
+            .spotify {
+              display: none;
+            }
+            img {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 150px;
+              transform: rotate(-90deg);
+            }
+        </style>
+  </head>
+    <body>
+      <div id='container'>
+        <div id="wrapper">
+            <h1>Kamzei</h1>
+            <h2>I came to offend.&nbsp;</h2>
+            <p><a href="https://soundcloud.com/kamzei" target='_blank'>Shop</a></p>
+            <p><a href="mailto:officialKamzei@gmail.com">Contact</a></p>
+            <p><a href="https://soundcloud.com/kamzei" target='_blank'>Soundcloud</a></p>
+            <p><span><a href='https://www.instagram.com/kamzei/' target='_blank'>Instagram</a></span><span class='slash'>/</span><span><a href='https://www.facebook.com/Kamzei/' target='_blank'>Facebook</a></span></p>
+          </div>
+          <div class="spotify">
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332244191&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+          </div>
+        </div>
+
+          <script type="text/javascript">
+          $(document).ready(function(){
+            $('#container').hide(0).fadeIn(2000)
+          });
+          </script>
+    </body>
+</html>
