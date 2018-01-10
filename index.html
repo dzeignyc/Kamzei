@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 
   </head>
     <body>
@@ -16,6 +17,7 @@
             <h1>Kamzei</h1>
             <h2>I came to offend.&nbsp;</h2>
             <!-- <p><a href="#" target='_blank'>Shop</a></p> -->
+            <button class='controls paused' preload="auto"></button>
             <p><a href="mailto:officialKamzei@gmail.com">Contact</a></p>
             <p><a href="https://soundcloud.com/kamzei" target='_blank'>Soundcloud</a></p>
             <p><span><a href='https://www.instagram.com/kamzei/' target='_blank'>Instagram</a></span>
@@ -23,14 +25,9 @@
               <span><a href='https://www.facebook.com/Kamzei/' target='_blank'>Facebook</a></span>
             </p>
           </div>
-          <div class="audio">
-            <audio src="./css/soWhat.mp3" autoplay></audio>
-        </div>
-
-          <script type="text/javascript">
-          $(document).ready(function(){
-            $('#container').hide(0).fadeIn(2000)
-          });
-          </script>
+            <audio id='audio' autoplay loop>
+              <source src="./css/soWhat.mp3" type="audio/mpeg">
+          </audio>
+      </div>
     </body>
 </html>
